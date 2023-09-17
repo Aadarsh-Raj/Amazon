@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    background-color: #0c0d0e;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+
+.logo {
+    width: 128px;
+    height: 72px;
+}
+
+.material-symbols-outlined {
+    color: white;
+}
+
+.nav-delivery-font {
+    color:
+        #cccccc;
+    margin-left: 20px;
+}
+
+.nav-fdir-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-large-font {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-delivery-returns {
+    font-size: 12px;
+}
+
+.nav-font-size-16 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 620px;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.search-icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #febd68;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+    max-width: 45px;
+    width: 100%;
+    color: black;
+}
+
+.icon-size-24 {
+    width: 24px;
+    height: 24px;
+}
+
+.icon-size-40 {
+    font-size: 40px;
+}
+
+.nav-items {
+    text-align: left;
+}
+
+.select-btn {
+    background: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+
+.input-bar {
+    max-width: 600px;
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.cart-section {
+    display: flex;
+}
+
+.nav-cart-para {
+    display: flex;
+    align-items: end;
+}
+
+/* header-bar */
+
+.header-bar {
+    background-color: #222f3d;
+    padding: 10px 20px;
+}
+
+.header-box {
+    display: flex;
+    font-size: 0.875rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-item-left {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header-bar ul {
+    display: flex;
+    list-style: none;
+    flex-grow: 1;
+    gap: 15px;
+    margin-left: 15px;
+}
+
+.navbar a:hover,
+.header-bar a:hover {
+    color: #ddd;
+}
+
+/* banner */
+.banner {
+    background: url(./public/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    background-position: center;
+}
+
+/* card-section */
+.card-bar {
+    height: 50px;
+    position: relative;
+    z-index: 5;
+}
+
+.cards-section {
+    display: flex;
+    gap: 40px;
+    overflow: hidden;
+    width: 100%;
+    /* max-width: 1280px; */
+    flex-wrap: wrap;
+}
+
+.card-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    background-color: white;
+    cursor: pointer;
+    /* max-width: 285px; */
+    width: 100%;
+    flex-basis: 22%;
+    
+}
+
+.card-items:hover {
+    transform: scale(1.1);
+    transition: transform 0.7s ease-in-out;
+}
+
+.card-items img {
+    height: 280px;
+    width: 100%;
+    /* max-width: 225px; */
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.card-items h3 {
+    margin-bottom: 10px;
+}
+
+.card-items a {
+    color: #0000ff;
+}
+
+.card-items:hover a {
+    color: #c7511f;
+    text-decoration: underline;
+}
+
+/* back-to-top */
+.back-to-top {
+    background-color: #37475a;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* footer */
+
+.footer{
+    display: flex;
+    background-color: #232f3e;
+    justify-content: space-evenly;
+    color: white;
+}
+.footer ul{
+    list-style: none;
+}
+.footer ul h3{
+    margin: 20px 0 10px 0;
+    font-size: 16px;
+}
+.footer ul li{
+    margin: 5px;
+    font-size: 14px;
+    text-align: left;
+}
+.footer a{
+    color: #babcbf;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+
+@media  only screen and (max-width:1119px) {
+    .card-items{
+        flex-basis: 28%;
+    }
+}
+
+@media  only screen and (max-width:829px) {
+    .card-items{
+        flex-basis: 46%;
+    }
+}
+
+@media  only screen and (max-width:539px) {
+    .card-items{
+        flex-basis: 100%;
+    }
+}
